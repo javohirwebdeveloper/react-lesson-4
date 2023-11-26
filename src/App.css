@@ -1,0 +1,105 @@
+
+
+.button-container {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 0;
+}
+
+.button-container button {
+  background-color: #2c3e50;
+  color: #ecf0f1;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button-container button:hover {
+  background-color: #34495e;
+}
+
+body {
+  background: linear-gradient(45deg, #3498db, #e74c3c, #2ecc71, #f1c40f);
+  background-size: 400% 400%;
+  animation: gradientAnimation 10s ease infinite;
+  margin: 0;
+
+  padding: 0;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.5s ease;
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+
+.App {
+  text-align: center;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.8);
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 50px;
+  align-items: center; /* Kartalarni o'rtasiga chiqarish uchun qo'shildi */
+  justify-content: center; /* Kartalarni o'rtasiga chiqarish uchun qo'shildi */
+}
+
+.user-card {
+  border: 1px solid #a5a5a5;
+  padding: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column; /* Kartalarni yonmayon joylashish uchun qo'shildi */
+  
+}
+
+.nav-link {
+  color: #333; /* Oq rangdagi nav-link rangi */
+}
+
+.tabs {
+  margin-bottom: 20px;
+}
+
+.content {
+  border: 1px solid #ccc;
+  padding: 20px;
+  display: flex;
+
+  justify-content: center;
+  width: 370px;
+  background-color: #fff;
+}
+.gallery {
+  width: 300px;
+
+}
+li {
+  list-style: none;
+  margin-left: -35px;
+  width: 300px;
+  
+}
+ul {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
